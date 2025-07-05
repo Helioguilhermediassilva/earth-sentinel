@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "total_tests": 12,
+    "passed": 9,
+    "failed": 3,
+    "success_rate": 75.0,
+    "duration": "0:00:00.068611",
+    "timestamp": "2025-07-05T05:24:09.572278"
+  },
+  "test_results": [
+    {
+      "test": "IoT Sensors API",
+      "success": true,
+      "message": "Retrieved 10 sensors",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.508370"
+    },
+    {
+      "test": "Satellite Imagery API",
+      "success": false,
+      "message": "Status: 200, Data: {'data_source': 'X-Road Satellite Connector', 'image_count': 5, 'imagery': [{'cloud_coverage': 8.72440553640446, 'coverage_area': {'bounds': {'east': -44.266069240349985, 'north': -22.864018652674957, 'south': -23.06401865267496, 'west': -44.46606924034999}, 'center': {'lat': -22.96401865267496, 'lon': -44.36606924034999}}, 'download_url': 'https://mock-satellite-api.com/images/SAT_1def1d7d.tif', 'image_id': 'SAT_206fde8f', 'imagery_type': 'optical', 'metadata': {'bands': 8, 'file_size_mb': 179.1940708815968}, 'quality_score': 0.7330980400655526, 'resolution': '30m', 'satellite': 'Landsat-8', 'timestamp': '2025-07-04T13:24:09.510039'}, {'cloud_coverage': 27.56678293656727, 'coverage_area': {'bounds': {'east': -46.95744891719129, 'north': -24.657439195223876, 'south': -24.85743919522388, 'west': -47.157448917191296}, 'center': {'lat': -24.757439195223878, 'lon': -47.057448917191294}}, 'download_url': 'https://mock-satellite-api.com/images/SAT_cb7eb1f8.tif', 'image_id': 'SAT_203b7a33', 'imagery_type': 'optical', 'metadata': {'bands': 13, 'file_size_mb': 65.30166448477667}, 'quality_score': 0.9313319143736216, 'resolution': '250m', 'satellite': 'Sentinel-2', 'timestamp': '2025-07-05T05:24:09.510080'}, {'cloud_coverage': 12.945759723082007, 'coverage_area': {'bounds': {'east': -43.14640157702219, 'north': -20.357321307126774, 'south': -20.557321307126777, 'west': -43.34640157702219}, 'center': {'lat': -20.457321307126776, 'lon': -43.24640157702219}}, 'download_url': 'https://mock-satellite-api.com/images/SAT_f4066151.tif', 'image_id': 'SAT_094b6ef5', 'imagery_type': 'thermal', 'metadata': {'bands': 13, 'file_size_mb': 102.53383561714676}, 'quality_score': 0.9445277789112929, 'resolution': '100m', 'satellite': 'MODIS', 'timestamp': '2025-07-04T14:24:09.510106'}, {'cloud_coverage': 10.812493933031703, 'coverage_area': {'bounds': {'east': -46.59408139866665, 'north': -24.714061881775567, 'south': -24.91406188177557, 'west': -46.794081398666656}, 'center': {'lat': -24.81406188177557, 'lon': -46.694081398666654}}, 'download_url': 'https://mock-satellite-api.com/images/SAT_c4533b2b.tif', 'image_id': 'SAT_61c8c6c0', 'imagery_type': 'thermal', 'metadata': {'bands': 3, 'file_size_mb': 200.96109408915584}, 'quality_score': 0.9810280698582194, 'resolution': '100m', 'satellite': 'MODIS', 'timestamp': '2025-07-04T21:24:09.510127'}, {'cloud_coverage': 25.73632015083028, 'coverage_area': {'bounds': {'east': -46.25707443512381, 'north': -23.96544980725395, 'south': -24.165449807253953, 'west': -46.457074435123815}, 'center': {'lat': -24.06544980725395, 'lon': -46.35707443512381}}, 'download_url': 'https://mock-satellite-api.com/images/SAT_056294e9.tif', 'image_id': 'SAT_488c896e', 'imagery_type': 'radar', 'metadata': {'bands': 3, 'file_size_mb': 104.67361390044479}, 'quality_score': 0.8783994980804899, 'resolution': '100m', 'satellite': 'VIIRS', 'timestamp': '2025-07-04T18:24:09.510146'}], 'status': 'success', 'timestamp': '2025-07-05T09:24:09.510160'}",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.511414"
+    },
+    {
+      "test": "Weather Data API",
+      "success": true,
+      "message": "Retrieved 8 stations",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.514120"
+    },
+    {
+      "test": "Risk Assessment",
+      "success": true,
+      "message": "Risk score: 0.366, Type: fire",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.519990"
+    },
+    {
+      "test": "Federated Learning",
+      "success": false,
+      "message": "Status: 200, Data: {'local_updates': [{'data_size': 20, 'node_id': 'node_1', 'performance_metrics': {'accuracy': 0.8093398996149803, 'loss': 0.3192065238280046, 'precision': 0.7078653550294729, 'recall': 0.7500085655402372}, 'weights': {'earthquake': {'geological_weight': 0.30019669304025093, 'historical_weight': 0.19998341656279237, 'seismic_weight': 0.4999401097992603}, 'extreme_weather': {'humidity_weight': 0.20006896672070215, 'pressure_weight': 0.2997440843136762, 'temperature_gradient_weight': 0.2500982169080235, 'wind_speed_weight': 0.25016249691248654}, 'fire': {'humidity_weight': 0.2502954294523806, 'temperature_weight': 0.3000808577768218, 'vegetation_weight': 0.1998519881833192, 'wind_weight': 0.24994547094086292}, 'flood': {'precipitation_weight': 0.40013409131529204, 'soil_moisture_weight': 0.1999605465078237, 'terrain_weight': 0.09998213037593633, 'water_level_weight': 0.2999889653178885}}}, {'data_size': 20, 'node_id': 'node_2', 'performance_metrics': {'accuracy': 0.7469958507989299, 'loss': 0.2170004077205654, 'precision': 0.6403912152499946, 'recall': 0.6949309005953572}, 'weights': {'earthquake': {'geological_weight': 0.2999140744993209, 'historical_weight': 0.20010089494163918, 'seismic_weight': 0.5001559314896067}, 'extreme_weather': {'humidity_weight': 0.19998407855005126, 'pressure_weight': 0.2999614647297593, 'temperature_gradient_weight': 0.2500927152273856, 'wind_speed_weight': 0.25006972115900705}, 'fire': {'humidity_weight': 0.2500430314452586, 'temperature_weight': 0.2999936529678593, 'vegetation_weight': 0.19997219980657963, 'wind_weight': 0.250166856846918}, 'flood': {'precipitation_weight': 0.39998643370626713, 'soil_moisture_weight': 0.1999857700130231, 'terrain_weight': 0.09998097989908052, 'water_level_weight': 0.29990478274241084}}}, {'data_size': 20, 'node_id': 'node_3', 'performance_metrics': {'accuracy': 0.7777513488458692, 'loss': 0.3598182894783244, 'precision': 0.7513739226674131, 'recall': 0.7715784917376441}, 'weights': {'earthquake': {'geological_weight': 0.29991955124599373, 'historical_weight': 0.20005863580083663, 'seismic_weight': 0.49997453521336477}, 'extreme_weather': {'humidity_weight': 0.20002319874307364, 'pressure_weight': 0.2999521502727047, 'temperature_gradient_weight': 0.24997888427854864, 'wind_speed_weight': 0.2502358565078681}, 'fire': {'humidity_weight': 0.24993751606168338, 'temperature_weight': 0.30010270678381745, 'vegetation_weight': 0.2000600179124077, 'wind_weight': 0.25003487914741435}, 'flood': {'precipitation_weight': 0.40012798532328114, 'soil_moisture_weight': 0.2000926355003695, 'terrain_weight': 0.09996276901998416, 'water_level_weight': 0.2999717397460259}}}], 'status': 'success', 'training_round': {'average_performance': {'accuracy': 0.7780290330865931, 'loss': 0.29867507367563145, 'precision': 0.6998768309822935, 'recall': 0.7388393192910795}, 'convergence_metrics': {'performance_variance': 0.000647835291398452, 'weight_stability': 0.9994677120764573}, 'nodes_participated': 3, 'total_data_samples': 60, 'weight_changes': {'earthquake': {'geological_weight': 1.222889449781217e-05, 'historical_weight': 4.85350196296197e-05, 'seismic_weight': 3.500686276847187e-05}, 'extreme_weather': {'humidity_weight': 8.025554896040621e-05, 'pressure_weight': 7.316704610421665e-05, 'temperature_gradient_weight': 4.460045886794939e-05, 'wind_speed_weight': 0.00013861159341599372}, 'fire': {'humidity_weight': 5.379107938030536e-05, 'temperature_weight': 5.744494491610741e-05, 'vegetation_weight': 1.4094381259099897e-05, 'wind_weight': 9.325424668044091e-05}, 'flood': {'precipitation_weight': 2.1056509750039254e-05, 'soil_moisture_weight': 2.4111262231618635e-05, 'terrain_weight': 9.944534824947449e-05, 'water_level_weight': 2.828688602463103e-06}}}, 'updated_weights': {'earthquake': {'geological_weight': 0.3000101062618552, 'historical_weight': 0.20004764910175604, 'seismic_weight': 0.5000235255007439}, 'extreme_weather': {'humidity_weight': 0.20002541467127566, 'pressure_weight': 0.2998858997720467, 'temperature_gradient_weight': 0.2500566054713192, 'wind_speed_weight': 0.2501560248597872}, 'fire': {'humidity_weight': 0.2500919923197742, 'temperature_weight': 0.3000590725094995, 'vegetation_weight': 0.1999614019674355, 'wind_weight': 0.2500490689783984}, 'flood': {'precipitation_weight': 0.40008283678161344, 'soil_moisture_weight': 0.20001298400707207, 'terrain_weight': 0.09997529309833365, 'water_level_weight': 0.2999551626021084}}}",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.546546"
+    },
+    {
+      "test": "Contract Creation",
+      "success": true,
+      "message": "Created contract: dd454771...",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.549764"
+    },
+    {
+      "test": "Aadhaar Payment",
+      "success": true,
+      "message": "Transaction: AADHAAR_BC6504FE",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.552238"
+    },
+    {
+      "test": "OpenG2P Program",
+      "success": true,
+      "message": "Created program: 9e63d5c4...",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.554831"
+    },
+    {
+      "test": "Resource Discovery",
+      "success": true,
+      "message": "Found 0 available drones",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.557110"
+    },
+    {
+      "test": "Dispatch Request",
+      "success": false,
+      "message": "Status: 201, No assignment created",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.559729"
+    },
+    {
+      "test": "Emergency Simulation",
+      "success": true,
+      "message": "Dispatched 0 resources",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.561888"
+    },
+    {
+      "test": "Integration Test",
+      "success": true,
+      "message": "Full workflow completed successfully",
+      "data": null,
+      "timestamp": "2025-07-05T05:24:09.572050"
+    }
+  ]
+}
